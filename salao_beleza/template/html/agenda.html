@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Agenda - Elegance Studio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.Y32BSReg95njgHhvaYenigHaHa?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Elegance Studio Logo">
+            <span>Elegance Studio</span>
+        </a>
+        <nav class="navbar">
+            <a href="index.html#inicio">Início</a>
+            <a href="index.html#servicos">Serviços</a>
+            <a href="index.html#sobre">Sobre Nós</a>
+            <a href="index.html#galeria">Galeria</a>
+            <a href="index.html#depoimentos">Depoimentos</a>
+            <a href="index.html#contato">Contato</a>
+            <a href="login.html" class="login-link-navbar"><i class="fas fa-user"></i> Login</a>
+        </nav>
+        <a href="agenda.html" class="btn">Agende seu Horário</a>
+    </header>
+
+    <section class="scheduling-container">
+        <div class="scheduling-form">
+            <h2>Agendar Novo Horário</h2>
+            <form>
+                <label for="cliente">Nome do Cliente:</label>
+                <input type="text" id="cliente" name="cliente" required>
+
+                <div class="form-group-inline">
+                    
+                    <div class="form-field-wrapper">
+                        <label for="servico">Serviço:</label>
+                        <select id="servico" name="servico" required>
+                            <option value="">Selecione</option>
+                            <option value="Corte de Cabelo">Corte de Cabelo</option>
+                            <option value="Manicure">Manicure</option>
+                            <option value="Pedicure">Pedicure</option>
+                            <option value="Coloração">Coloração</option>
+                            <option value="Escova">Escova</option>
+                        </select>
+                    </div>
+
+                    <div class="form-field-wrapper">
+                        <label for="data">Data:</label>
+                        <input type="date" id="data" name="data" required>
+                    </div>
+
+                    </div>
+
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" name="hora" required>
+
+                <button type="submit" class="btn">Agendar</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="proximos-agendamentos" class="table-section">
+        <div class="table-container">
+            <h2>Próximos Agendamentos</h2>
+            <table class="appointment-table">
+                <thead>
+                    <tr>
+                        <th>Cliente</th>
+                        <th>Serviço</th>
+                        <th>Data</th>
+                        <th>Hora</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Maria Silva</td>
+                        <td>Corte de Cabelo</td>
+                        <td>2024-06-15</td>
+                        <td>14:00</td>
+                    </tr>
+                    <tr>
+                        <td>João Souza</td>
+                        <td>Manicure</td>
+                        <td>2024-06-15</td>
+                        <td>15:00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer id="contato" class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Exemplo Studio</h3>
+                <p>(11) 99999-9999</p>
+                <p>contato@exempo.com</p>
+                <p>Rua Exemplo, 123 - São Paulo, SP</p>
+            </div>
+            <div class="footer-col">
+                <h3>Horário</h3>
+                <p>Segunda a Sexta: 9h às 19h</p>
+                <p>Sábado: 9h às 16h</p>
+                <p>Domingo: Fechado</p>
+            </div>
+            <div class="footer-col">
+                <h3>Links</h3>
+                <a href="#servicos">Serviços</a>
+                <a href="#sobre">Nossa Equipe</a>
+                <a href="#">Política de Privacidade</a>
+            </div>
+            <div class="footer-col">
+                <h3>Redes Sociais</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Exemplo studio. Projeto de faculdade.</p>
+        </div>
+    </footer>
+</body>
+</html>
