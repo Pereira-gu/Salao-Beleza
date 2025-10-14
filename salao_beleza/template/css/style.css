@@ -1,5 +1,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap');
 
+.scheduling-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background: #faf6f1;
+}
+
+.scheduling-form {
+    background: #fff;
+    padding: 2.5rem 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.scheduling-form h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: var(--font-title);
+    color: var(--primary-color);
+}
+
+.scheduling-form label {
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+}
+
+.scheduling-form input,
+.scheduling-form select,
+.scheduling-form textarea {
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: var(--font-body);
+    font-size: 1rem;
+}
+
+.scheduling-form textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.scheduling-form button,
+.scheduling-form .btn {
+    margin-top: 0.5rem;
+    width: 100%;
+}
+
+.scheduling-success {
+    color: var(--primary-color);
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
 :root {
     --primary-color: #c5a47e;
     --secondary-color: #333;
@@ -363,4 +423,62 @@ h2 {
 .login-link {
     text-align: center;
     margin-top: 1rem;
+}
+
+.table-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background: var(--white-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    text-align: left;
+}
+
+.table-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.appointment-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.appointment-table th, .appointment-table td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.appointment-table th {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-family: var(--font-body);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.appointment-table tr:last-child td {
+    border-bottom: none;
+}
+
+.appointment-table tbody tr:hover {
+    background-color: #fcf8f3; 
+}
+
+
+.table-section {
+    padding-top: 50px;
+}
+
+.form-group-inline {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+}
+
+.form-group-inline .form-field-wrapper input,
+.form-group-inline .form-field-wrapper select {
+    width: 100%; 
 }
