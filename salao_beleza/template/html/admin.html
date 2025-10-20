@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin - Elegance Studio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <div class="admin-wrapper">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <a href="index.html" class="logo">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.Y32BSReg95njgHhvaYenigHaHa?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Elegance Studio Logo">
+                    <span>Elegance Studio</span>
+                </a>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="admin.html" class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                    <li><a href="#"><i class="fas fa-calendar-alt"></i> Agendamentos</a></li>
+                    <li><a href="#"><i class="fas fa-users"></i> Clientes</a></li>
+                    <li><a href="#"><i class="fas fa-cut"></i> Serviços</a></li>
+                    <li><a href="#"><i class="fas fa-user-tie"></i> Profissionais</a></li>
+                    <li><a href="#"><i class="fas fa-cog"></i> Configurações</a></li>
+                    <li><a href="index.html"><i class="fas fa-sign-out-alt"></i> Sair</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="main-header">
+                <h1>Dashboard</h1>
+                <p>Bem-vindo, Administrador!</p>
+            </header>
+            <section class="dashboard-cards">
+                <div class="card">
+                    <div class="card-icon"><i class="fas fa-calendar-check"></i></div>
+                    <div class="card-content">
+                        <h4>Agendamentos Hoje</h4>
+                        <p>12</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fas fa-calendar-week"></i></div>
+                    <div class="card-content">
+                        <h4>Agendamentos (Mês)</h4>
+                        <p>88</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fas fa-user-plus"></i></div>
+                    <div class="card-content">
+                        <h4>Novos Clientes</h4>
+                        <p>25</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fas fa-dollar-sign"></i></div>
+                    <div class="card-content">
+                        <h4>Faturamento (Mês)</h4>
+                        <p>R$ 7.500,00</p>
+                    </div>
+                </div>
+            </section>
+            <section class="content-section">
+                <div class="table-container">
+                    <div class="table-header">
+                        <h2>Próximos Agendamentos</h2>
+                        <a href="agenda.html" class="btn">Novo Agendamento</a>
+                    </div>
+                    <table class="appointment-table">
+                        <thead>
+                            <tr>
+                                <th>Cliente</th>
+                                <th>Serviço</th>
+                                <th>Data</th>
+                                <th>Hora</th>
+                                <th>Status</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Ana Beatriz</td>
+                                <td>Corte e Escova</td>
+                                <td>2024-10-28</td>
+                                <td>10:00</td>
+                                <td><span class="status-confirmed">Confirmado</span></td>
+                                <td>
+                                    <button class="btn-action btn-edit"><i class="fas fa-pencil-alt"></i></button>
+                                    <button class="btn-action btn-delete"><i class="fas fa-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Carlos Eduardo</td>
+                                <td>Manicure</td>
+                                <td>2024-10-28</td>
+                                <td>11:00</td>
+                                <td><span class="status-pending">Pendente</span></td>
+                                <td>
+                                    <button class="btn-action btn-edit"><i class="fas fa-pencil-alt"></i></button>
+                                    <button class="btn-action btn-delete"><i class="fas fa-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Mariana Costa</td>
+                                <td>Coloração</td>
+                                <td>2024-10-29</td>
+                                <td>14:00</td>
+                                <td><span class="status-confirmed">Confirmado</span></td>
+                                <td>
+                                    <button class="btn-action btn-edit"><i class="fas fa-pencil-alt"></i></button>
+                                    <button class="btn-action btn-delete"><i class="fas fa-trash"></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
