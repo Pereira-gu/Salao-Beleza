@@ -723,3 +723,66 @@ section {
         font-size: 2rem;
     }
 }
+/* ==========================================================================
+   8. COMPONENTES ADICIONAIS DO ADMIN
+   ========================================================================== */
+/* --- Filtros de Tabela --- */
+.table-filters {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.table-filters input,
+.table-filters select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+/* --- Status Cancelado --- */
+.status-cancelled {
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--white-color);
+    background-color: #e74c3c;
+}
+
+/* --- Formulário de Configurações --- */
+.settings-form-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--white-color);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.settings-form h3 {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.settings-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.settings-form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.settings-form .btn {
+    width: auto;
+    margin-top: 20px;
+}

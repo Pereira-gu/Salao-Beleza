@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Admin - Elegance Studio</title>
+    <title>Clientes - Admin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -19,9 +19,9 @@
             </div>
             <nav class="sidebar-nav">
                 <ul>
-                    <li><a href="admin.html" class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                    <li><a href="admin.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
                     <li><a href="agendamentos.html"><i class="fas fa-calendar-alt"></i> Agendamentos</a></li>
-                    <li><a href="clientes.html"><i class="fas fa-users"></i> Clientes</a></li>
+                    <li><a href="clientes.html" class="active"><i class="fas fa-users"></i> Clientes</a></li>
                     <li><a href="servicos.html"><i class="fas fa-cut"></i> Serviços</a></li>
                     <li><a href="profissionais.html"><i class="fas fa-user-tie"></i> Profissionais</a></li>
                     <li><a href="configuracoes.html"><i class="fas fa-cog"></i> Configurações</a></li>
@@ -32,63 +32,35 @@
 
         <main class="main-content">
             <header class="main-header">
-                <h1>Dashboard</h1>
-                <p>Bem-vindo, Administrador!</p>
+                <h1>Gerenciar Clientes</h1>
+                <p>Adicione, edite e visualize os clientes do salão.</p>
             </header>
-            <section class="dashboard-cards">
-                <div class="card">
-                    <div class="card-icon"><i class="fas fa-calendar-check"></i></div>
-                    <div class="card-content">
-                        <h4>Agendamentos Hoje</h4>
-                        <p>12</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-icon"><i class="fas fa-calendar-week"></i></div>
-                    <div class="card-content">
-                        <h4>Agendamentos (Mês)</h4>
-                        <p>88</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-icon"><i class="fas fa-user-plus"></i></div>
-                    <div class="card-content">
-                        <h4>Novos Clientes</h4>
-                        <p>25</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-icon"><i class="fas fa-dollar-sign"></i></div>
-                    <div class="card-content">
-                        <h4>Faturamento (Mês)</h4>
-                        <p>R$ 7.500,00</p>
-                    </div>
-                </div>
-            </section>
+
             <section class="content-section">
                 <div class="table-container">
                     <div class="table-header">
-                        <h2>Próximos Agendamentos</h2>
-                        <a href="agenda.html" class="btn">Novo Agendamento</a>
+                        <h2>Todos os Clientes</h2>
+                        <button class="btn">Adicionar Cliente</button>
+                    </div>
+                     <div class="table-filters">
+                        <input type="text" placeholder="Buscar por nome ou telefone...">
                     </div>
                     <table class="appointment-table">
                         <thead>
                             <tr>
-                                <th>Cliente</th>
-                                <th>Serviço</th>
-                                <th>Data</th>
-                                <th>Hora</th>
-                                <th>Status</th>
+                                <th>Nome</th>
+                                <th>Telefone</th>
+                                <th>Email</th>
+                                <th>Agendamentos</th>
                                 <th>Ações</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>Ana Beatriz</td>
-                                <td>Corte e Escova</td>
-                                <td>2024-10-28</td>
-                                <td>10:00</td>
-                                <td><span class="status-confirmed">Confirmado</span></td>
+                                <td>(11) 98765-4321</td>
+                                <td>ana.b@email.com</td>
+                                <td>5</td>
                                 <td>
                                     <button class="btn-action btn-edit"><i class="fas fa-pencil-alt"></i></button>
                                     <button class="btn-action btn-delete"><i class="fas fa-trash"></i></button>
@@ -96,10 +68,9 @@
                             </tr>
                             <tr>
                                 <td>Carlos Eduardo</td>
-                                <td>Manicure</td>
-                                <td>2024-10-28</td>
-                                <td>11:00</td>
-                                <td><span class="status-pending">Pendente</span></td>
+                                <td>(11) 91234-5678</td>
+                                <td>carlos.e@email.com</td>
+                                <td>8</td>
                                 <td>
                                     <button class="btn-action btn-edit"><i class="fas fa-pencil-alt"></i></button>
                                     <button class="btn-action btn-delete"><i class="fas fa-trash"></i></button>
@@ -107,10 +78,9 @@
                             </tr>
                             <tr>
                                 <td>Mariana Costa</td>
-                                <td>Coloração</td>
-                                <td>2024-10-29</td>
-                                <td>14:00</td>
-                                <td><span class="status-confirmed">Confirmado</span></td>
+                                <td>(11) 95555-1234</td>
+                                <td>mari.costa@email.com</td>
+                                <td>12</td>
                                 <td>
                                     <button class="btn-action btn-edit"><i class="fas fa-pencil-alt"></i></button>
                                     <button class="btn-action btn-delete"><i class="fas fa-trash"></i></button>
